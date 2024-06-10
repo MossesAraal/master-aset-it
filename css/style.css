@@ -1,0 +1,189 @@
+*, html, body {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: #F3F7EC;
+}
+
+.container {
+    display: grid;
+    height: 945px;
+    grid-template-columns: 15% auto auto;
+    grid-template-rows: 10% auto auto;
+    grid-template-areas: 'title header header' 'menu dashboard dashboard' 'menu dashboard dashboard' 'menu table table';
+}
+
+.title {
+    grid-area: title;
+    background-color: #3C5B6F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title > h1 {
+    font-size: 30px;
+    color: #F3F7EC;
+    font-weight: 700;
+}
+
+.header {
+    display: flex;
+    grid-area: header;
+    background-color: #3C5B6F;
+    justify-content: center;
+    align-items: center;
+}
+
+.header > h1 {
+    color: #F3F7EC;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: #3C5B6F;
+}
+
+.dashboard {
+    grid-area: dashboard;
+    background-color: #F3F7EC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard > a > div {
+    margin-right: 10px;
+    height: 300px;
+    width: 300px;
+}
+
+.dashboard > a > div > p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #3C5B6F;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.menu > a > div {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    color: #F3F7EC;
+}
+
+.menu > a > div {
+    border-bottom: 1px solid #F3F7EC;
+}
+
+.menu > a > div:hover {
+    opacity: 0.5;
+}
+
+.form-karyawan {
+    grid-area: dashboard;
+    background-color: #F3F7EC;
+    display: flex;
+    justify-content: center;
+}
+
+.form-karyawan > div > form > input[type=text] {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.form-karyawan > div > h1 {
+    color: #3C5B6F;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+.form-karyawan > div > form > input[type=radio] {
+    margin-bottom: 15px;
+}
+
+.form-karyawan > div > form > select {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+    margin-top: 5px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.form-karyawan > div > form > button {
+    width: 100px;
+    padding: 8px;
+    margin-top: 15px;
+    background-color: #3C5B6F;
+    border-radius: 5px;
+    color: #F3F7EC;
+    font-weight: 700;
+}
+
+.form-karyawan > div > form > label {
+    font-size: 15px;
+    color: #3C5B6F;
+    font-weight: 700;
+}
+
+.form-karyawan > div > form > input[type=file] {
+    margin-bottom: 15px;;
+}
+
+.form-karyawan > div > form > input[type=date] {
+    width: 100px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.table-karyawan {
+    width: 100%;
+    grid-area: table;
+}
+
+.table-karyawan > thead > tr > th {
+    padding: 10px;
+    background-color: #3C5B6F;
+    color: #F3F7EC;
+}
+
+.table-karyawan > tbody > tr > td {
+    padding: 10px;
+    text-align: center;
+    color: #3C5B6F;
+}
+
+.table-request {
+    width: 100%;
+    grid-area: dashboard;
+    height: 70px;
+}
+
+.table-request > thead > tr > th {
+    padding: 10px;
+    background-color: #3C5B6F;
+    color: #F3F7EC;
+    height: 20px;
+}
+
+.table-request > tbody > tr > td {
+    padding: 10px;
+    text-align: center;
+    color: #3C5B6F;
+}
